@@ -3,16 +3,16 @@ $ = (id) => {
 }
 
 validate = () => {
-    var first = $('first').value;
-    var last = $('last').value;
-    var user = $('user').value;
-    var email = $('email').value;
-    var pass = $('pass').value;
+    var first = $('first').value.trim();
+    var last = $('last').value.trim();
+    var user = $('user').value.trim();
+    var email = $('email').value.trim();
+    var pass = $('pass').value.trim();
     if (first == '' || last == '' || email == '' || user == '' || pass == '' ) {
-        alert('Fill all spaces');
+        $('reg-fail').innerHTML = 'Inputs cannot be blank';
         return false;
     } else if (pass.length < 8){
-        alert('Password has to be at least 8 characters');
+        $('reg-fail').innerHTML = 'Password is too short (minimun 8 characters)';
         return false;
     } else {
         return true;
@@ -20,13 +20,13 @@ validate = () => {
 }
 
 validateLog = () => {
-    var user = $('logUser').value;
-    var pass = $('logPass').value;
+    var user = $('logUser').value.trim();
+    var pass = $('logPass').value.trim();
     if (user == '' || pass == '') {
-        alert('Fill all spaces');
+        $('log-fail').innerHTML = 'Inputs cannot be blank';
         return false;
     } else if (pass.length < 8) {
-        alert('Password has to be at least 8 characters');
+        $('log-fail').innerHTML = 'Password has to be at least 8 characters';
         return false;
     } else {
         return true;
@@ -35,10 +35,16 @@ validateLog = () => {
 
 validateFile = () => {
     var file = $('file');
-    if (file.files.length == 0) {
-        alert("No files selected");
+    var name = $('name').value.trim();
+    var descrip = $('descrip').value.trim();
+    if (name == '' || descrip == '') {
+    	$('file-fail').innerHTML = 'Inputs cannot be blanks';
+        return false;
+    } else if (file.files.length == 0) {
+        $('file-fail').innerHTML = 'No file selected';
         return false;
     } else {
-        return false;
+        return true;
     }
 }
+

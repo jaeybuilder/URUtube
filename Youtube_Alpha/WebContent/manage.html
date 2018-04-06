@@ -27,7 +27,7 @@
                 <li class="nav-item">
                     <div class="input-group">
                         <input class="form-control mr-sm-2 searchbar" type="search" placeholder="Search" aria-label="Search" id="search">
-                        <button class="btn btn-outline-urutube btn-search" onclick="search()"><i class="material-icons md-24 md-light" id="searchicon">search</i></button>
+                        <button class="btn btn-outline-urutube btn-search" onclick="search()"><i class="material-icons md-24 md-light">search</i></button>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -41,19 +41,19 @@
                     </button>
                 </li>
                 <li class="nav-item dropdown form-inline" id="userpanel">
-					<a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				    	<i class="material-icons md-30 md-light" id="usericon">account_circle</i>
-			        </a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<p class="h5 text-center" id="showUsername"></p>
-			          	<div class="dropdown-divider"></div>
+                    <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="material-icons md-30 md-light" id="usericon">account_circle</i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <p class="h5 d-block text-center" id="showUsername"></p>
+                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="fileup.html">File Up</a>
                         <a class="dropdown-item" href="manage.html">Manage Files</a>
-					</div>
-				</li>
+                    </div>
+                </li>
                 <li class="nav-item" id="logoutBtn">
                     <button type="button" class="btn btn-outline-urutube" onclick="destroy()">
-						SIGN OUT
+                        SIGN OUT
                     </button>
                 </li>
             </ul>
@@ -70,8 +70,6 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                	<p class="h6 text-danger text-center" id="reg-fail"></p>
-                    <p class="h6 text-success text-center" id="reg-success"></p>
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
@@ -124,8 +122,7 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <div class="modal-body mx-auto" id='log-succes'>
-                    <p class="h6 text-danger text-center" id="log-fail"></p>
+                <div class="modal-body mx-auto">
                     <div class="form-group">
                         <label for="">Username:</label>
                         <input type="text" class="form-control" id="logUser" placeholder="">
@@ -137,8 +134,8 @@
                     </div><br>
                     <small class="">New to URUtube? Create an account first.</small>
                 </div>
-                <div class="modal-footer mx-auto">
-                    <button type="button" class="btn btn-primary" onclick="login()" id="logbtn">SIGN IN</button>
+                <div class="modal-footer mx-auto">  
+                    <button type="button" class="btn btn-primary" onclick="login()">SIGN IN</button>
                 </div>
             </div>
         </div>

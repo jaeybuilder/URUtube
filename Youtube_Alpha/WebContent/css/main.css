@@ -2,7 +2,98 @@
 .bg-uru {
     background-color:  rgb(64,109,195) !important;
 }
-
 ul.navbar {
     margin-left: 1rem;
 }
+.btn {
+    font-weight: 500;
+    color: white;
+    background: transparent;
+    padding: .375rem .75rem;
+    font-size: .90rem;
+    border-radius: 1.5rem;
+}
+.btn-primary {
+    color: rgb(64,109,195);
+    background-color: transparent;
+    border-color: rgb(64,109,195);
+    border-width: .2rem;
+}
+.btn-primary:hover {
+    color: rgb(white);
+    background-color: rgb(64,109,195);
+    border-color: transparent;
+}
+.btn-outline-urutube:hover {
+    color: rgb(64,109,195);
+    background-color: rgb(250, 250, 250);
+}
+.searchbar{
+	min-width: 400px;
+	margin-left: -50px; 
+	height: 2rem;
+	margin-top: .03rem;
+}
+.btn.btn-search {
+	width: 45px;
+	border-radius: .25rem;
+	margin-left: -10px;
+	margin-right: 50px;
+	height: 2rem;
+	margin-top: .03rem;
+}
+.btn.btn-search:hover{
+	background-color: rgb(0,204,153);
+}
+
+.material-icons.md-18.btn-search:hover {
+	color: rgb(64,109,195);
+}
+#searchicon{
+	margin-top: -.19rem;
+}
+.material-icons.md-18 {
+font-size: 18px !important;
+height: 18px !important;
+width: 18px !important;
+}
+.material-icons.md-24 {
+font-size: 24px !important;
+height: 24px !important;
+width: 24px !important;
+}
+.material-icons.md-30 {
+font-size: 30px !important;
+width: 30px !important;
+height: 30px !important;
+}
+.material-icons.md-48 {
+font-size: 48px !important;
+height: 48px !important;
+width: 48px !important;
+}
+.material-icons.md-light{
+color: white;
+}
+.material-icons.md-gray {
+color: rgb(250,250,250);
+}
+.dropdown-toggle::after {
+    content: none;
+}
+#navbarDropdown{
+	margin-right: .5rem;
+    margin-top: .4rem;
+}
+.dropdown-menu.show {
+	margin-left: -4rem;
+}
+/*Input file
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}*/
